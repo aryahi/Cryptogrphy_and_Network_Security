@@ -1,0 +1,11 @@
+The extended Euclidean algorithm
+
+It is used for finding the greatest common divisor of two positive integers a and b and writing this greatest common divisor 
+as an integer linear combination of a and b. The steps of this algorithm are given below.
+
+    Set the value of the variable c to the larger of the two values a and b, and set d to the smaller of a and b.
+    Find the quotient and the remainder when c is divided by d. Call the quotient q and the remainder r. Use the 
+    division algorithm and expressions for previous remainders to write an expression for r in terms of a and b.
+    If r = 0, then gcd(a, b) = d. The expression for the previous value of r gives an expression for gcd(a, b) in 
+    terms of a and b. Stop.
+    Otherwise, use the current values of d and r as the new values of c and d, respectively, and go back to step 2.
