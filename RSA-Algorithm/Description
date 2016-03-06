@@ -1,0 +1,31 @@
+RSA Algorithm
+
+The RSA algorithm is named after Ron Rivest, Adi Shamir and Len Adleman, who invented it in 1977 [RIVE78]. 
+The basic technique was first discovered in 1973 by Clifford Cocks [COCK73] of CESG (part of the British GCHQ) 
+but this was a secret until 1997. The patent taken out by RSA Labs has expired.
+The RSA cryptosystem is the most widely-used public key cryptography algorithm in the world. It can be used to 
+encrypt a message without the need to exchange a secret key separately.
+The RSA algorithm can be used for both public key encryption and digital signatures. Its security is based on the 
+difficulty of factoring large integers.
+
+Party A can send an encrypted message to party B without any prior exchange of secret keys. A just uses B's 
+public key to encrypt the message and B decrypts it using the private key, which only he knows. RSA can also be used 
+to sign a message, so A can sign a message using their private key and B can verify it using A's public key. 
+
+
+Key Generation Algorithm
+
+This is the original algorithm.
+
+    Generate two large random primes, p and q, of approximately equal size such that their product n = pq is of 
+    the required bit length, e.g. 1024 bits. [See note 1].
+    Compute n = pq and (phi) φ = (p-1)(q-1). [See note 6].
+    Choose an integer e, 1 < e < phi, such that gcd(e, phi) = 1. [See note 2].
+    Compute the secret exponent d, 1 < d < phi, such that ed ≡ 1 (mod phi). [See note 3].
+    The public key is (n, e) and the private key (d, p, q). Keep all the values d, p, q and phi secret. [We prefer 
+    sometimes to write the private key as (n, d) because you need the value of n when using d. Other times we might 
+    write the key pair as ((N, e), d).]
+
+    n is known as the modulus.
+    e is known as the public exponent or encryption exponent or just the exponent.
+    d is known as the secret exponent or decryption exponent.
