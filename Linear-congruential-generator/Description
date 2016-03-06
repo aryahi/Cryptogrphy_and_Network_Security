@@ -1,0 +1,23 @@
+In the following we shall consider methods for generating a sequence of random real numbers Un, uniformly distributed between zero and one. In other words, every number in the sequence is in [0,1) and the chance of being any number of [0,1) is equal. Since a computer can represent a real number with only finite accuracy, we shall actually be generating integers Xn between zero and some number m; the fraction
+
+Un = Xn/m
+
+will then lie between zero and one.
+
+One of the most successful random number generators known today are special cases of the following scheme, which is called the linear congruential method. We choose four "magic numbers":
+X0 , the starting value; X0 ≥ 0 .
+a, the multiplier; a ≥ 0.
+c, the increment; c ≥ 0.
+m, the modulus; m > X0, m > a, m > c.
+
+ 
+
+The desired sequence of random numbers < Xn > is then obtained by setting
+
+Xn+1 =(aXn + c) mod m,   n ≥0.
+
+Xn is chosen to be in [0, m-1], n ≥0.
+
+ 
+
+This is called a linear congruential sequence.
