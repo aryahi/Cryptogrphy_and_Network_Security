@@ -1,0 +1,20 @@
+The Chinese remainder theorem is a result about congruences in number theory and its generalizations in abstract algebra. 
+It was first published in the 3rd to 5th centuries by Chinese mathematician Sun Tzu.
+In its basic form, the Chinese remainder theorem will determine a number n that when divided by some given divisors leaves
+given remainders. For example, what is the lowest number n that when divided by 3 leaves a remainder of 2, when divided by 
+5 leaves a remainder of 3, and when divided by 7 leaves a remainder of 2?
+The original form of the theorem, contained in the 5th-century book Sunzi's Mathematical Classic 
+(孫子算經) by the Chinese mathematician Sun Tzu and later generalized with a complete solution called Dayanshu (大衍術) in 
+Qin Jiushao's 1247 Mathematical Treatise in Nine Sections (數書九章, Shushu Jiuzhang), is a statement about simultaneous 
+congruences.
+Suppose n1, n2, …, nk are positive integers that are pairwise coprime. 
+Then, for any given sequence of integers a1,a2, …, ak, there exists an integer x solving the following system of 
+simultaneous congruences.
+
+Furthermore, all solutions x of this system are congruent modulo the product, N = n1n2…nk.
+Hence  for all , if and only if .
+
+Sometimes, the simultaneous congruences can be solved even if the ni's are not pairwise coprime. A solution x exists 
+if and only if:
+
+All solutions x are then congruent modulo the least common multiple of the ni.
